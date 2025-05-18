@@ -21,6 +21,7 @@ html {
   --color-golden-brown: #b57f49;
   --color-deep-teal: #074b4c;
   --color-warm-beige: #E8C999;
+  scroll-behavior: smooth;
 
 }
 body {
@@ -36,7 +37,7 @@ header {
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
-  background-color: var(--color-white-smoke);
+  background-color: rgba(250, 250, 250, 0.9);
 }
 
 .header-contact {
@@ -92,7 +93,7 @@ header {
   list-style: none;
   display: flex;
   gap: 4rem;
-  padding: 1.4rem 1.5rem;
+  padding: 1rem 1.2rem;
   background-color: #E8C999;
   border-radius: 2rem;
 }
@@ -302,4 +303,87 @@ header {
     flex: none;
     width: 100%;
   }
+}
+
+/* Apartments Section */
+.apartments-section {
+  padding: 5rem 0;
+}
+
+.apartments-section h2 {
+  font-size: 3.5rem;
+  font-family: var(--secondary-font);
+  margin-bottom: 1rem;
+}
+
+.apartments-section p {
+  font-size: 1.9rem;
+  color: var(--color-slate-grey);
+}
+
+.apartments-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-deep-teal);
+}
+
+.apartments-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.apartment-card {
+  --apartment-card-length: 30rem;
+  width: var(--apartment-card-length);
+  height: var(--apartment-card-length);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.apartment-img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.apartment-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.apartment-card:hover .apartment-img img {
+  transform: scale(1);
+}
+
+.apartment-info {
+  padding: 1rem;
+  background-color: var(--color-white-smoke);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.apartment-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-deep-teal);
+}
+
+.apartment-info p {
+  font-size: 1.3rem;
+  color: var(--color-slate-grey);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: 500;
+  color: var(--color-warm-beige);
+  font-size: 12rem;
+  margin-bottom: 1rem;
+  display: block;
 }
