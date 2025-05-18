@@ -20,6 +20,7 @@ html {
   --color-cool-blue: #3a7ca5;
   --color-golden-brown: #b57f49;
   --color-deep-teal: #074b4c;
+  --color-warm-beige: #E8C999;
 
 }
 body {
@@ -27,6 +28,7 @@ body {
   font-family: var(--primary-font)
 }
 
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -69,7 +71,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .header-logo-wrapped {
@@ -139,8 +141,66 @@ header {
   color: var(--color-cool-blue)
 }
 
+/* Hero Section */
+.hero {
+  padding-top: 2rem;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(./images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-light-grey);
+}
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.hero h1 {
+  font-size: 6.8rem;
+  font-weight: 575;
+  margin-bottom: 1.5rem;
+  font-family: var(--secondary-font);
+}
 
+.hero p {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  font-family: var(--secondary-font);
+  color: var(--color-white-smoke);
+}
 
+.cta-hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-deep-teal);
+  color: var(--color-white-smoke);
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 2px solid var(--color-warm-beige);
+  transition: all 0.3s ease;
+}
 
+.cta-hero-btn:hover {
+  background-color: transparent;
+  color: var(--color-warm-beige);
+}
+
+@media screen and (max-width: 43.75em) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
