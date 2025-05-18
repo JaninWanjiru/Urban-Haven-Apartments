@@ -71,7 +71,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: .8rem 2rem;
 }
 
 .header-logo-wrapped {
@@ -92,6 +92,9 @@ header {
   list-style: none;
   display: flex;
   gap: 4rem;
+  padding: 1.4rem 1.5rem;
+  background-color: #E8C999;
+  border-radius: 2rem;
 }
 
 .menu-toggle-button {
@@ -138,7 +141,7 @@ header {
 }
 
 .header-nav-list-item a:hover {
-  color: var(--color-cool-blue)
+  color: var(--color-cool-blue);
 }
 
 /* Hero Section */
@@ -202,5 +205,101 @@ header {
 
   .hero p {
     font-size: 1.5rem;
+  }
+}
+
+/* About Section */
+.about-title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  color: var(--color-deep-teal);
+}
+
+.about-title h2 {
+  font-size: 3.5rem;
+  font-family: var(--secondary-font);
+  margin-bottom: 1rem;
+}
+
+.about-title p {
+  font-size: 1.9rem;
+  color: var(--color-slate-grey);
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-card-img-wrapper {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-card-img-wrapper img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 450px;
+  height: auto;
+  border-radius: 5px;
+  padding-left: 0rem;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: var(--color-deep-teal);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 2rem;
+}
+
+.cta-about-btn {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-golden-brown);
+  color: var(--color-white-smoke);
+  border: 2px solid var(--color-golden-brown);
+  transition: all 0.3s ease
+}
+
+.cta-about-btn:hover {
+  background-color: transparent;
+  color: var(--color-golden-brown);
+}
+
+@media screen and (max-width: 750){
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .about-card-img-wrapper {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .about-text {
+    flex: none;
+    width: 100%;
   }
 }
