@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="./images/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Urban Haven Apartments</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,9 +32,13 @@
         <nav class="header-nav">
           <ol class="header-nav-list">
             <li class="header-nav-list-item"><a href="#">Home</a></li>
-            <li class="header-nav-list-item"><a href="#apartments">Apartments</a></li>
-            <li class="header-nav-list-item"><a href="#amenities">Amenities</a></li>
-            <li class="header-nav-list-item"><a href="#">Contact</a></li>
+            <li class="header-nav-list-item">
+              <a href="#apartments">Apartments</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#amenities">Amenities</a>
+            </li>
+            <li class="header-nav-list-item"><a href="#contact">Contact</a></li>
           </ol>
         </nav>
         <button class="menu-toggle-button">
@@ -214,57 +218,121 @@
 
     <!-- Amenities Section -->
     <section id="amenities" class="amenities-section">
+      <div class="amenities-title">
+        <h2>Available Amenities</h2>
+        <p>Making your stay comfortable &hearts;</p>
+      </div>
+
       <div class="amenities-grid">
         <div class="amenities-items">
-        <img src="./images/wifi.jpg" alt="wifi" />
-        <h3>Free WiFi</h3>
-        <p>Free wifi except for those living in single rooms.</p>
-      </div>
+          <img src="./images/wifi.jpg" alt="wifi" />
+          <h3>Free WiFi</h3>
+          <p>Free wifi except for those living in single rooms.</p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/parking.jpg" alt="parking" />
-        <h3>Free Parking</h3>
-        <p>
-          Free parking except for those living in single rooms and bedsitters.
-        </p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/parking.jpg" alt="parking" />
+          <h3>Free Parking</h3>
+          <p>
+            Free parking except for those living in single rooms and bedsitters.
+          </p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/laundry.jpg" alt="laundry" />
-        <h3>Laundry</h3>
-        <p>On-site laundry @ Kshs.150 per basket.</p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/laundry.jpg" alt="laundry" />
+          <h3>Laundry</h3>
+          <p>On-site laundry @ Kshs.150 per basket.</p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/gym.jpg" alt="Gym" />
-        <h3>Free Gym</h3>
-        <p>Free gym except for those living in single rooms and bedsitters.</p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/gym.jpg" alt="Gym" />
+          <h3>Free Gym</h3>
+          <p>
+            Free gym except for those living in single rooms and bedsitters.
+          </p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/swim pool.jpg" alt="swimming pool" />
-        <h3>Free Swimming pool</h3>
-        <p>Swimming pool - free for everyone.</p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/swim pool.jpg" alt="swimming pool" />
+          <h3>Free Swimming pool</h3>
+          <p>Swimming pool - free for everyone.</p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/elevator.jpg" alt="elevator" />
-        <h3>Elevator</h3>
-        <p>Elevator access - elevators for easy access to upper floors.</p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/elevator.jpg" alt="elevator" />
+          <h3>Elevator</h3>
+          <p>Elevator access - elevators for easy access to upper floors.</p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/water.jpg" alt="water" />
-        <h3>Free water</h3>
-        <p>Free water for everyone.</p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/water.jpg" alt="water" />
+          <h3>Free water</h3>
+          <p>Free water for everyone.</p>
+        </div>
 
-      <div class="amenities-items">
-        <img src="./images/theatre.jpg" alt="theatre" />
-        <h3>Free theatre</h3>
-        <p>Community theatre - free for everyone.</p>
-      </div>
+        <div class="amenities-items">
+          <img src="./images/theatre.jpg" alt="theatre" />
+          <h3>Free theatre</h3>
+          <p>Community theatre - free for everyone.</p>
+        </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>CONTACT US</h3>
+          <p>Have questions or need more info? We're just a message away.</p>
+        </div>
+
+        <div id="contact" class="footer-contact">
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+254718764327</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>urhaven@apartments.com</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-facebook"></i>
+            <p>Facebook</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <form class="contact-form">
+            <div class="form-row name-row">
+              <div class="form-info">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" />
+              </div>
+              <div class="form-info">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" />
+              </div>
+            </div>
+            <div class="form-info">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-info">
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2025. A product of
+        <a href="https://github.com/JaninWanjiru">Jane Ndung'u</a> &hearts;
+      </p>
+    </footer>
   </body>
 </html>
