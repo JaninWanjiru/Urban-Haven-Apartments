@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="style.css" /><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -19,20 +23,6 @@
   <body>
     <!-- Header Section -->
     <header class="header">
-      <div class="header-contact">
-        <div class="header-contact-item">
-          <i class="fa-solid fa-phone"></i>
-          <p>+254718764327</p>
-        </div>
-        <div class="header-contact-item">
-          <i class="fa-solid fa-paper-plane"></i>
-          <p>urhaven@apartments.com</p>
-        </div>
-        <div class="header-contact-item">
-          <i class="fa-solid fa-clock"></i>
-          <p>Monday - Saturday 8:00am - 5:00pm</p>
-        </div>
-      </div>
       <div class="header-navigation">
         <a href="" class="header-logo-wrapped">
           <h1>
@@ -42,9 +32,8 @@
         <nav class="header-nav">
           <ol class="header-nav-list">
             <li class="header-nav-list-item"><a href="#">Home</a></li>
-            <li class="header-nav-list-item"><a href="#">Apartments</a></li>
-            <li class="header-nav-list-item"><a href="#">Amenities</a></li>
-            <li class="header-nav-list-item"><a href="#">Gallery</a></li>
+            <li class="header-nav-list-item"><a href="#apartments">Apartments</a></li>
+            <li class="header-nav-list-item"><a href="#amenities">Amenities</a></li>
             <li class="header-nav-list-item"><a href="#">Contact</a></li>
           </ol>
         </nav>
@@ -55,17 +44,17 @@
       </div>
     </header>
 
-<!-- Hero Section -->
- <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Urban Haven Apartments</h1>
-      <p>Your Ideal Home in Murang'a, Kiharu</p>
-      <a href="#contact" class="cta-hero-btn">Book a Viewing</a>
-    </div>
- </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Urban Haven Apartments</h1>
+        <p>Your Ideal Home in Murang'a, Kiharu</p>
+        <a href="#contact" class="cta-hero-btn">Book a Viewing</a>
+      </div>
+    </section>
 
- <!-- About Section -->
-  <section class="about-section">
+    <!-- About Section -->
+    <section class="about-section">
       <div class="about-title">
         <h2>About Urban Haven</h2>
         <p>Your Home Away From Home</p>
@@ -73,21 +62,38 @@
       <div class="about-content">
         <div class="about-card">
           <div class="about-card-img-wrapper">
-            <img src="./images/about.jpg" alt="Urban Haven Apartments">
+            <img src="./images/about.jpg" alt="Urban Haven Apartments" />
           </div>
         </div>
         <div class="about-text">
           <h3>12+ Years of Excellence</h3>
-          <p>Urban Haven Apartments has proudly served the Murang'a, Kiharu area for over 12 years, offering reliable, high-quality rental spaces that feel like home. Over the years, we've built a strong reputation for providing safe, welcoming, and well-maintained apartments that suit the nedds of students, professionals, and families alike.</p>
-          <p>Our goal is to offer more than just a place to stay- we strive to create a living environment that is comfortable, affordable, and supportive. We understand that home is where you recharge, grow and build memories, which is why our spaces are designed with both function and comfort in mind.</p>
-          <p>With various apartment options, modern amenities like reliable internet, clean water, and secure surroundings, plus a responsive management team, Urban Haven ensures your stay is smooth and enjoyable.</p>
+          <p>
+            Urban Haven Apartments has proudly served the Murang'a, Kiharu area
+            for over 12 years, offering reliable, high-quality rental spaces
+            that feel like home. Over the years, we've built a strong reputation
+            for providing safe, welcoming, and well-maintained apartments that
+            suit the nedds of students, professionals, and families alike.
+          </p>
+          <p>
+            Our goal is to offer more than just a place to stay- we strive to
+            create a living environment that is comfortable, affordable, and
+            supportive. We understand that home is where you recharge, grow and
+            build memories, which is why our spaces are designed with both
+            function and comfort in mind.
+          </p>
+          <p>
+            With various apartment options, modern amenities like reliable
+            internet, clean water, and secure surroundings, plus a responsive
+            management team, Urban Haven ensures your stay is smooth and
+            enjoyable.
+          </p>
           <a href="#apartments" class="cta-about-btn">View Apartments</a>
         </div>
       </div>
-  </section>
+    </section>
 
-  <!--Apartments Section -->
-  <section class="apartments-section">
+    <!--Apartments Section -->
+    <section id="apartments" class="apartments-section">
       <div class="apartments-title">
         <h2>Urban Haven Apartments</h2>
         <p>Find the perfect space for your needs</p>
@@ -95,91 +101,170 @@
       <div class="apartments-grid">
         <div class="apartment-card">
           <div class="apartment-img">
-          <img src="./images/single rooms.jpg" alt="Single Room">  
+            <img src="./images/single rooms.jpg" alt="Single Room" />
           </div>
           <div class="apartment-info">
             <h3>Single Rooms</h3>
             <p>Cozy and budget-friendly singles suitable for individuals.</p>
             <span class="price">Ksh 3,500 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
 
         <div class="apartment-card">
           <div class="apartment-img">
-            <img src="./images/bedsitter.jpg" alt="Bedsitter">
+            <img src="./images/bedsitter.jpg" alt="Bedsitter" />
           </div>
           <div class="apartment-info">
             <h3>Bedsitters</h3>
             <p>Comfortable bedsitters with a kitchen area and sink.</p>
             <span class="price">Ksh 5,500 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
 
         <div class="apartment-card">
           <div class="apartment-img">
-          <img src="./images/studio apartments.jpg" alt="Studio Apartment">  
+            <img src="./images/studio apartments.jpg" alt="Studio Apartment" />
           </div>
           <div class="apartment-info">
             <h3>Studio Apartments</h3>
-            <p>Stylish and functional apartments featuring a layout of combined living, sleeping and dining area. </p>
+            <p>
+              Stylish and functional apartments featuring a layout of combined
+              living, sleeping and dining area.
+            </p>
             <span class="price">Ksh 7,000 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
 
         <div class="apartment-card">
           <div class="apartment-img">
-          <img src="./images/one bedroom apartments.jpg" alt="One Bedroom Apartment">  
+            <img
+              src="./images/one bedroom apartments.jpg"
+              alt="One Bedroom Apartment"
+            />
           </div>
           <div class="apartment-info">
             <h3>One Bedroom Apartments</h3>
-            <p>Special apartments with a separate bedroom, ideal for anyone looking for additional privacy and space.</p>
+            <p>
+              Special apartments with a separate bedroom, ideal for anyone
+              looking for additional privacy and space.
+            </p>
             <span class="price">Ksh 8,500 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
 
         <div class="apartment-card">
           <div class="apartment-img">
-          <img src="./images/two bedroom apartments.jpg" alt="Two Bedroom Apartment">  
+            <img
+              src="./images/two bedroom apartments.jpg"
+              alt="Two Bedroom Apartment"
+            />
           </div>
           <div class="apartment-info">
             <h3>Two Bedroom Apartments</h3>
-            <p>Larger apartments with two separate bedrooms, suitable for small families or roommates.</p>
+            <p>
+              Larger apartments with two separate bedrooms, suitable for small
+              families or roommates.
+            </p>
             <span class="price">Ksh 10,000 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
 
         <div class="apartment-card">
           <div class="apartment-img">
-          <img src="./images/one bedroom self-contained apartments.jpg" alt="One Bedroom Self-Contained Apartment">  
+            <img
+              src="./images/one bedroom self-contained apartments.jpg"
+              alt="One Bedroom Self-Contained Apartment"
+            />
           </div>
           <div class="apartment-info">
             <h3>One Bedroom Self-Contained</h3>
-            <p>Apartments witha separate bedroom and private amenities, including a kitchen and bathroom, offering utmost privacy and convenience. </p>
+            <p>
+              Apartments witha separate bedroom and private amenities, including
+              a kitchen and bathroom, offering utmost privacy and convenience.
+            </p>
             <span class="price">Ksh 15,000 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
 
         <div class="apartment-card">
           <div class="apartment-img">
-          <img src="./images/two bedroom self-contained apartments.jpg" alt="Two Bedroom Self-Contained Apartment">  
+            <img
+              src="./images/two bedroom self-contained apartments.jpg"
+              alt="Two Bedroom Self-Contained Apartment"
+            />
           </div>
           <div class="apartment-info">
             <h3>Two Bedroom Self-Contained</h3>
-            <p>Apartments with two bedrooms and private amenities, providing ample space and comfort for families or larger households.</p>
+            <p>
+              Apartments with two bedrooms and private amenities, providing
+              ample space and comfort for families or larger households.
+            </p>
             <span class="price">Ksh 3,500 per month</span>
-            <a href="#" class="cta-hero-btn">Book a Viewing</a>
+            <a href="#contact" class="apartment-btn">Book a Viewing</a>
           </div>
         </div>
       </div>
-  </section>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities-section">
+      <div class="amenities-grid">
+        <div class="amenities-items">
+        <img src="./images/wifi.jpg" alt="wifi" />
+        <h3>Free WiFi</h3>
+        <p>Free wifi except for those living in single rooms.</p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/parking.jpg" alt="parking" />
+        <h3>Free Parking</h3>
+        <p>
+          Free parking except for those living in single rooms and bedsitters.
+        </p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/laundry.jpg" alt="laundry" />
+        <h3>Laundry</h3>
+        <p>On-site laundry @ Kshs.150 per basket.</p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/gym.jpg" alt="Gym" />
+        <h3>Free Gym</h3>
+        <p>Free gym except for those living in single rooms and bedsitters.</p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/swim pool.jpg" alt="swimming pool" />
+        <h3>Free Swimming pool</h3>
+        <p>Swimming pool - free for everyone.</p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/elevator.jpg" alt="elevator" />
+        <h3>Elevator</h3>
+        <p>Elevator access - elevators for easy access to upper floors.</p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/water.jpg" alt="water" />
+        <h3>Free water</h3>
+        <p>Free water for everyone.</p>
+      </div>
+
+      <div class="amenities-items">
+        <img src="./images/theatre.jpg" alt="theatre" />
+        <h3>Free theatre</h3>
+        <p>Community theatre - free for everyone.</p>
+      </div>
+      </div>
+    </section>
   </body>
 </html>
-
-
-       
