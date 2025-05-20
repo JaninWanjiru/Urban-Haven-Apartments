@@ -152,14 +152,13 @@ header {
 }
 
 .cta-hero-btn {
-  display: inline-block;
   text-decoration: none;
   background-color: var(--color-deep-teal);
   color: var(--color-white-smoke);
   padding: 0.8rem 1.5rem;
-  border-radius: 20px;
+  border-radius: 2rem;
   font-weight: 500;
-  border: 2px solid var(--color-warm-beige);
+  border: 0.2rem solid var(--color-warm-beige);
   transition: all 0.3s ease;
 }
 
@@ -223,8 +222,7 @@ header {
   max-width: 300px;
   max-height: 450px;
   height: auto;
-  border-radius: 5px;
-  padding-left: 0rem;
+  border-radius: 0.5;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -250,11 +248,11 @@ header {
 
 .cta-about-btn {
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   padding: 0.8rem 1.5rem;
   background-color: var(--color-golden-brown);
   color: var(--color-white-smoke);
-  border: 2px solid var(--color-golden-brown);
+  border: 0.2rem solid var(--color-golden-brown);
   transition: all 0.3s ease;
 }
 
@@ -304,7 +302,7 @@ header {
   color: var(--color-deep-teal);
 }
 
-.apartments-grid {
+.apartments-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -405,7 +403,7 @@ header {
   margin-bottom: 3rem;
   color: var(--color-deep-teal);
 }
-.amenities-grid {
+.amenities-container {
   padding: 3rem 5rem;
   display: flex;
   justify-content: center;
@@ -445,12 +443,13 @@ header {
 /* Footer styling */
 .footer {
   background-color: #948979;
-  padding: 3rem 2rem 1.5rem;
+  padding: 1rem 2rem 1rem;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-col {
@@ -470,13 +469,13 @@ header {
 
 .footer-col h3 {
   color: var(--color-deep-teal);
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 .footer-col p {
   color: var(--color-white-smoke);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .footer-contact-item {
